@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#409BC0"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_alignParentTop="true">
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ="
+                android:textColor="#ffffff"
+                android:layout_marginRight="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="General Information"
+                android:id="@+id/gen_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Name"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="name"
+                android:id="@+id/name_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Date Of Examination"
+                style="@style/Identifier"
+                />
+
+            <EditText
+                style="@style/box"
+                android:hint="date"
+                android:id="@+id/date_box"
+                android:inputType="date"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Registration Number"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="regno"
+                android:id="@+id/reg_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Age"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="age"
+                android:id="@+id/age_box"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Wife Of"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="name"
+                android:id="@+id/wife_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Address"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="address"
+                android:id="@+id/address_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Mobile Number"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="mobile"
+                android:id="@+id/mobile_box"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Landline"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="landline"
+                android:id="@+id/landline_box"
+                android:inputType="number"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/previous_page1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:text="Previous"
+                    android:onClick="previous"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:text="|"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/next_page1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:clickable="true"
+                    android:text="Next"
+                    android:onClick="next"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

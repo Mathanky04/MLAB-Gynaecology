@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Obstetric Information"
+                android:id="@+id/gen_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Obstetric History"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Obstetric Score:"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  G:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/G_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  P:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/P_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  A:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/A_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  L:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/L_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  D:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/D_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Mode of delivery"
+                style="@style/Identifier"/>
+
+            <TableRow
+                android:id="@+id/tabla_cabecera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <TableLayout
+                    android:id="@+id/tabla_cuerpo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="SNo."
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="Mode of delivery"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="Complications"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="Outcome"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/sl1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <EditText
+                            android:id="@+id/mode1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/comp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+                        <EditText
+                            android:id="@+id/outcome1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/sl2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="2"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/mode2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/comp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/outcome2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/sl3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="3"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/mode3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/comp3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                        <EditText
+                            android:id="@+id/outcome3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/previous_page5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:text="Previous"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:text="|"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/next_page5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:text="Next"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/topbar" />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#e8e8e7"
+            android:orientation="vertical" >
+
+
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/greybackground"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Obstetric Information"
+                    android:id="@+id/gen_info"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Menstrual History:"
+                    style="@style/Identifier"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/folic"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Regular   "
+                        />
+
+                    <RadioButton
+                        android:id="@+id/irregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Irregular" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="   LMP:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:hint="   "
+                        android:inputType="date"
+                        android:id="@+id/LMP"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="   EDD:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:hint="   "
+                        android:inputType="date"
+                        android:id="@+id/EDD"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Contraceptive	History:"
+                    style="@style/Identifier"
+                    />
+
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/contraceptive_history"
+                    android:scrollbars="vertical"
+                    />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Past	History:"
+                    style="@style/Identifier"
+                    />
+
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/past_history"
+                    android:scrollbars="vertical"
+                    />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Family History:"
+                    style="@style/Identifier"
+                    />
+
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/family_history"
+                    android:scrollbars="vertical"
+                    />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Personal	History:"
+                    style="@style/Identifier"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Diet"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/diet"
+                    android:scrollbars="vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Sleep"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/sleep"
+                    android:scrollbars="vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Addictive Habits"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/addictive_habits"
+                    android:scrollbars="vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Allergies: Known"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/allergies_known"
+                    android:scrollbars="vertical"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Allergies: Unknown"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:id="@+id/allergies_unknown"
+                    android:scrollbars="vertical"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/previous_page6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:text="Previous"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#000000"
+                        android:text="|"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/next_page6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:text="Next"
+                        android:textStyle="bold"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

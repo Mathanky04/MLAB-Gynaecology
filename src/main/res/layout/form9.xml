@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/topbar" />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#e8e8e7"
+            android:orientation="vertical" >
+
+
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/greybackground"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Obstetric	Information- Investigation"
+                    android:textSize="20dp"
+                    android:id="@+id/gen_info"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Hb"
+                    style="@style/Identifier"
+                    />
+
+                <EditText style="@style/box"
+                    android:hint="hb"
+                    android:id="@+id/hb_box"
+                    />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Blood grouping and typing"
+                    style="@style/Identifier"
+                    />
+
+                <EditText style="@style/box"
+                    android:hint="blood group"
+                    android:id="@+id/blood_group"
+                    />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Urine routine"
+                    style="@style/Identifier"
+                    />
+
+                <EditText style="@style/box"
+                    android:hint="text"
+                    android:id="@+id/urine_routine"
+                    />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" VDRL"
+                    style="@style/Identifier"
+                    />
+                <RadioGroup
+                    android:id="@+id/VDRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/reactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reactive"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/non_reactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non-reactive" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" HIV"
+                    style="@style/Identifier"
+                    />
+                <RadioGroup
+                    android:id="@+id/HIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/HIV_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/HIV_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" HbsAg"
+                    style="@style/Identifier"
+                    />
+                <RadioGroup
+                    android:id="@+id/HbsAg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positive"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/negative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Negative" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" USG"
+                    style="@style/Identifier"
+                    />
+
+                <EditText style="@style/box"
+                    android:hint="usg"
+                    android:id="@+id/usg_box"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/previous_page9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:text="Previous"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+                <Button android:layout_width="190dp"
+                    android:id="@+id/submit1"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="submit"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:background="#13b586"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mathanky.gynocare2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form1">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form2">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form3">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form4">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form5">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form6">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form7">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form8">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form8" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".form9">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.form9" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".topbar">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.topbar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".update" />
+        <activity android:name=".ThankYou">
+            <intent-filter>
+                <action android:name="com.example.mathanky.gynocare2.ThankYou" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
