@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gynaecology App</string>
+    <string name="radio_yes">Yes</string>
+    <string name="radio_reactive">Reactive</string>
+    <string name="radio_non_reactive">Non reactive</string>
+    <string name="radio_no">No</string>
+    <string name="radio_normal">Normal</string>
+    <string name="radio_abnormal">Abnormal</string>
+    <string name="radio_present">Present</string>
+    <string name="radio_absent">Absent</string>
+    <string name="radio_known">Known</string>
+    <string name="radio_unknown">Unknown</string>
+    <string name="first">1st dose</string>
+    <string name="second">2nd dose</string>
+</resources>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/greybackground"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/gen_info"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:text="General Information"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/name_box"
+                style="@style/box"
+                android:inputType="textPersonName"
+                android:hint="name" />
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Date Of Examination"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="56dp"
+                    style="@style/box"
+                    android:hint="dd"
+                    android:inputType="number"
+                    android:id="@+id/date_day_box"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignTop="@+id/date_month_box"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:maxLength="2"/>
+                <TextView
+                    android:text=" /"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="55dp"
+                    android:id="@+id/dash1"
+                    android:layout_toLeftOf="@+id/date_month_box"
+                    android:layout_toEndOf="@+id/date_day_box"
+                    android:layout_toRightOf="@+id/date_day_box" />
+
+                <TextView
+                    android:text=" /"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="55dp"
+                    android:id="@+id/dash2"
+                    android:layout_toLeftOf="@+id/date_year_box"
+                    android:layout_toEndOf="@+id/date_month_box"
+                    android:layout_toRightOf="@+id/date_month_box" />
+
+                <EditText
+                    android:id="@+id/date_month_box"
+                    style="@style/box"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:layout_width="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/date_day_box"
+                    android:layout_toEndOf="@+id/date_day_box"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginStart="51dp"
+                    android:maxLength="2"/>
+
+                <EditText
+                    android:layout_width="100dp"
+                    style="@style/box"
+                    android:hint="yyyy"
+                    android:inputType="number"
+                    android:id="@+id/date_year_box"
+                    android:maxLength="4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <TextView
+                style="@style/Identifier"
+                android:text=" Patient ID"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/reg_box"
+                style="@style/box"
+                android:hint="regno" />
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Age"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/age_box"
+                style="@style/box"
+                android:hint="age"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Wife Of"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/wife_box"
+                style="@style/box"
+                android:hint="name" />
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Occupation"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/occupation"
+                style="@style/box"
+                android:hint="name" />
+
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Address"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/address_box_1"
+                style="@style/box"
+                android:inputType="textPersonName"
+                android:hint="address line 1" />
+            <EditText
+                android:id="@+id/address_box_2"
+                style="@style/box"
+                android:inputType="textPersonName"
+                android:hint="address line 2" />
+            <EditText
+                android:id="@+id/address_box_3"
+                style="@style/box"
+
+                android:hint="address line 3" />
+
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Mobile Number"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/mobile_box"
+                style="@style/box"
+                android:hint="mobile"
+                android:maxLength="10"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/Identifier"
+                android:text=" Landline"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/landline_box"
+                style="@style/box"
+                android:hint="landline"
+                android:maxLength="11"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/proceed1"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="#13b586"
+                android:text="proceed"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:onClick="onProceed"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

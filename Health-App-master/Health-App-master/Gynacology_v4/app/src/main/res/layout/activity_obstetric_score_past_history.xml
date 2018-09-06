@@ -1,0 +1,430 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Obstetric Information"
+                android:id="@+id/gen_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Obstetric Score:"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  G: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    style="@style/box"
+                    android:id="@+id/G_box"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  P: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/P_box"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  A: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/A_box"
+                    style="@style/box"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  L: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    style="@style/box"
+                    android:id="@+id/L_box"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="  D: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/D_box"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Past Obstetric History"
+                android:id="@+id/past_obs_hist_title"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Pregnancy Order"
+                style="@style/Identifier"/>
+
+            <EditText style="@style/box"
+                android:hint="number"
+                android:text=" "
+                android:id="@+id/pregnancy_order"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Term / Preterm"
+                style="@style/Identifier"/>
+
+            <EditText style="@style/box"
+                android:id="@+id/term"
+                />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Mode of delivery"
+                style="@style/Identifier"/>
+
+            <RadioGroup
+                android:id="@+id/mode_of_delivery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/vaginal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vaginal"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/operative_vaginal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operative Vaginal"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/cesarean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cesarean"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Complications"
+                style="@style/Identifier"
+                />
+            <RadioGroup
+                android:id="@+id/complications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/complications_yes"
+                    android:layout_width="wrap_content"
+                    android:onClick="click"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    />
+
+                <CheckBox
+                    android:id="@+id/antenatal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Antenatal" />
+
+                <CheckBox
+                    android:id="@+id/intrapartum"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Intrapartum" />
+
+                <CheckBox
+                    android:id="@+id/postpartum"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Postpartum" />
+
+
+                <RadioButton
+                    android:id="@+id/complications_no"
+                    android:layout_width="wrap_content"
+                    android:onClick="click1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Baby Details"
+                style="@style/Identifier"
+                />
+
+            <TextView
+                android:text=" Status"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/status"
+                android:layout_marginLeft="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/alive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alive"
+                    />
+
+                <RadioButton
+                    android:id="@+id/dead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dead"
+                    />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:text=" Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_marginLeft="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Baby Weight"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/baby_weight"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:text=" kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Present Age"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/baby_age_months"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:text=" months "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    style="@style/box"
+                    android:id="@+id/baby_age_days"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:text=" days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button android:layout_width="120dp"
+                android:id="@+id/next_page5"
+                android:layout_height="38dp"
+                android:layout_marginTop="25dp"
+                android:text="next"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:background="#13b586"
+                android:onClick="onButton"/>
+
+                <Button android:layout_width="120dp"
+                        android:id="@+id/add_child"
+                        android:layout_height="38dp"
+                        android:text="Add"
+                        android:textColor="#fff"
+                        android:textSize="13dp"
+                        android:background="#13b586"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:onClick="onAddChild"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

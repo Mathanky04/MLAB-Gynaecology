@@ -1,0 +1,359 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Obstetric Information"
+                android:id="@+id/gen_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Menstrual History:"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/menstrual_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/menstrual_history_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regular"
+                    android:onClick="click1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/menstrual_history_irregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Irregular"
+                    android:onClick="click"/>
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/menstrual_history_box"
+                    android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Contraceptive	History:"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/contraceptive_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/contraceptive_history_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:onClick="click2"
+                    />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/contraceptive_history_box"
+                    android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/contraceptive_history_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:onClick="click3"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Past	History:"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/past_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/past_history_significant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Significant"
+                    android:onClick="click4"
+                    />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/past_history_box"
+                    android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/past_history_insignificant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insignificant"
+                    android:onClick="click5"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Family History:"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/family_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/family_history_significant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Significant"
+                    android:onClick="click6"
+                    />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/family_history_box"
+                    android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/family_history_insignificant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insignificant"
+                    android:onClick="click7"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Personal	History:"
+                style="@style/Identifier"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Diet"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <RadioGroup
+                android:id="@+id/diet"
+                android:layout_marginLeft="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/diet_veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veg"
+                    android:onClick="click2"
+                    />
+
+                <RadioButton
+                    android:id="@+id/diet_mixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mixed"
+                    android:onClick="click3"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Sleep"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <RadioGroup
+                android:id="@+id/sleep"
+                android:layout_marginLeft="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/sleep_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click2"
+                    />
+
+                <RadioButton
+                    android:id="@+id/sleep_disturbed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disturbed"
+                    android:onClick="click3"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Addictive Habits"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <RadioGroup
+                android:id="@+id/addictive_habits"
+                android:layout_marginLeft="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/addictive_habits_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:onClick="click8"
+                    />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/addictive_habits_box"
+                    android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/addictive_habits_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:onClick="click9"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Allergies: Known"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <RadioGroup
+                android:id="@+id/allergies_known"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/allergies_known_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:onClick="click10"
+                    />
+
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/allergies_known_box"
+                    android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/allergies_known_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:onClick="click11"/>
+
+            </RadioGroup>
+
+
+            <Button android:layout_width="150dp"
+                android:id="@+id/next_page6"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="next"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:background="#13b586"
+                android:onClick="onProceed"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

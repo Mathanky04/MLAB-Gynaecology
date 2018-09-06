@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kuppam.gynacology_v3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize|stateHidden">
+        <activity android:name=".doctor_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".generalinfo">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.generalinfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".obstetricinfo">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.onbtetricinfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tri1_investigation">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.tri1_invesigation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tri2_investigation">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.tri2_investigation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tri3_investigation">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.tri3_investigation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".obstetric_score_past_history">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.obstetric_score_past_history" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".histories">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.histories" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Generalphysicalexamination">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.Generalphysicalexamination" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".obs_systemic_examination">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.obs_systemic_examination" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gynaec_complaints_obstetric_history">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.gynaec_complaints_obstetric_history" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pasthistory">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.pasthistory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gynaec_family_history">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.gynaec_family_history" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".personal_history13">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.personal_history13" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gynaec_general_physical_examination">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.gynaec_general_physical_examination" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gynaec_systemic_examination">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.gynaec_systemic_examination" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gynaec_investigations">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.gynaec_investigations" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".choice">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.choice" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".planofcare">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.planofcare" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".thankyou">
+            <intent-filter>
+                <action android:name="kuppam.gynacology_v3.thankyou" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".trimester_choice" />
+        <activity android:name=".updateChoice" />
+        <activity android:name=".updateServer"></activity>
+    </application>
+
+</manifest>

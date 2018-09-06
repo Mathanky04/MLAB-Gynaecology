@@ -1,0 +1,602 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginRight="16dp"
+                      android:layout_marginBottom="30dp"
+                      android:orientation="vertical"
+                      android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="General physical examination"
+                android:id="@+id/gen_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Height"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/height"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:text=" cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Weight"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/weight"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:text=" kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" BMI Pre-pregnancy"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/bmi"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" PR"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/pr"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:text=" beats/min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" BP"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    style="@style/box"
+                    android:inputType="number"
+                    android:id="@+id/bp"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:text=" mmHg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Temp"
+                style="@style/Identifier"/>
+
+            <RadioGroup
+                android:id="@+id/temp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/febrile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Febrile"
+                    />
+
+                <RadioButton
+                    android:id="@+id/afebrile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afebrile"
+                    />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Breasts"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/breasts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/breasts_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click1"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/breasts_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_abnormal"
+                    android:onClick="click"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/breasts_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Nipples"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/nipples"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/nipples_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click3"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/nipples_retracted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retracted"
+                    android:onClick="click2"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/nipples_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Thyroid"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/thyroid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/thyroid_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click5"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/thyroid_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_abnormal"
+                    android:onClick="click4"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/thyroid_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Spine"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/spine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/spine_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click7"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/spine_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_abnormal"
+                    android:onClick="click6"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/spine_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Icterus"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/icterus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/icterus_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click8"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/icterus_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/icterus_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click9"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Pallor"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/pallor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/pallor_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click10"
+                    />
+                <RadioGroup
+                    android:id="@+id/pallor_positive"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/pallor_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/pallor_double"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="++"
+                        />
+                    <RadioButton
+                        android:id="@+id/pallor_triple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+++"
+                        />
+
+                </RadioGroup>
+
+                <RadioButton
+                    android:id="@+id/pallor_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click11"
+                    />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Edema"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/edema"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/edema_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click12"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/edema_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/edema_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click13"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Cyanosis"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/cyanosis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/cyanosis_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click14"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/cyanosis_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/cyanosis_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click15"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Clubbing"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/clubbing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/clubbing_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click16"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/clubbing_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/clubbing_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click17"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Lymphadenopathy"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/lymphadenopathy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/lymphadenopathy_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click18"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/lymphadenopathy_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/lymphadenopathy_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click19"/>
+
+            </RadioGroup>
+
+
+
+
+            <Button android:layout_width="150dp"
+                    android:id="@+id/next_page7"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="next"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:background="#13b586"
+                    android:onClick="onProceed"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

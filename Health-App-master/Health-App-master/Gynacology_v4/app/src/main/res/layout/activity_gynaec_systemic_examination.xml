@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginRight="16dp"
+                      android:layout_marginBottom="30dp"
+                      android:orientation="vertical"
+                      android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Systemic Examination"
+                android:id="@+id/gen_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" CVS"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_CVS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_CVS_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:checked="false"
+                    android:onClick="click1"/>
+
+                <RadioButton
+                    android:id="@+id/g_CVS_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abnormal"
+                    android:checked="false"
+                    android:onClick="click"/>
+
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_CVS_box"
+                          android:scrollbars="vertical"
+                    />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" RS"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_RS"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_RS_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:onClick="click3"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_RS_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abnormal"
+                    android:onClick="click2"/>
+
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_RS_box"
+                          android:scrollbars="vertical"
+                    />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" CNS"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_CNS"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_CNS_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:onClick="click5"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_CNS_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abnormal"
+                    android:onClick="click4"/>
+
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_CNS_box"
+                          android:scrollbars="vertical"
+                    />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="P/A"
+                android:id="@+id/pa"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Inspection"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_inspection"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Palpitation"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_palpitation"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Percussion"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_percussion"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Auscultation"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_ascultation"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Local Examination"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_local_examination"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Speculum Examination"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_speculum_examination"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" bimanual examination"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_bimanual_examination"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Rectal Examination"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_rectal_examination"
+                      android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Provisional Diagnosis"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_provisional_diagnosis"
+                      android:scrollbars="vertical"
+                />
+
+
+        </LinearLayout>
+
+        <Button android:layout_width="150dp"
+                android:id="@+id/next_page16"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:text="next"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:background="#13b586"
+                android:onClick="onProceed"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

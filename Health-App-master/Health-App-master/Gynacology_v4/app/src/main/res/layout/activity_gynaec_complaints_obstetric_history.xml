@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Gynaecology Information"
+                android:id="@+id/g_gynaec_info"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Chief Complaints"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                android:hint="comments"
+                android:id="@+id/g_chief_complaints"
+                android:scrollbars="vertical"
+                />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" LMP"
+                style="@style/Identifier"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    style="@style/box"
+                    android:hint="dd"
+                    android:inputType="number"
+                    android:id="@+id/g_lmp_day_box"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignTop="@+id/date_month_box"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:maxLength="2"/>
+                <TextView
+                    android:text=" /"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="55dp"
+                    android:id="@+id/dash1"
+                    android:layout_toLeftOf="@+id/g_lmp_month_box"
+                    android:layout_toRightOf="@+id/g_lmp_day_box"
+                    android:layout_toEndOf="@+id/g_lmp_day_box"/>
+
+                <TextView
+                    android:text=" /"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="55dp"
+                    android:id="@+id/dash2"
+                    android:layout_toLeftOf="@+id/g_lmp_year_box"
+                    android:layout_toRightOf="@+id/g_lmp_month_box"
+                    android:layout_toEndOf="@+id/g_lmp_month_box"/>
+
+                <TextView
+                    android:id="@+id/g_lmp_month_box"
+                    style="@style/box"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/g_lmp_day_box"
+                    android:layout_toEndOf="@+id/g_lmp_day_box"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginStart="51dp"
+                    android:maxLength="2"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    style="@style/box"
+                    android:hint="yyyy"
+                    android:inputType="number"
+                    android:id="@+id/g_lmp_year_box"
+                    android:maxLength="4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+                <DatePicker
+                    android:id="@+id/simpleDatePicker2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#f39c12"
+                    android:datePickerMode="spinner" />
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/submitButton2"
+                android:layout_width="320dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/simpleDatePicker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#f39c12"
+                android:text="OK"
+                android:onClick="settext"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="History Of Present Illness"
+                android:id="@+id/g_hist_of_pres_illness"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" History Of Present Illness"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                android:hint="comments"
+                android:id="@+id/g_hist_of_pres_illness_box"
+                android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Menstrual History"
+                android:id="@+id/g_mens_hist"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Menstrual History"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_menstrual_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_menstrual_history_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="click"
+                    android:text="Regular"
+                    />
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/g_menstrual_history_regular_box"
+                    android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_menstrual_history_irregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="click1"
+                    android:text="Irregular" />
+                <EditText style="@style/box_big"
+                    android:hint="comments"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/g_menstrual_history_irregular_box"
+                    android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Obstetric History"
+                android:id="@+id/g_obs_hist"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Married Life"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                android:hint="comments"
+                android:id="@+id/g_married_life"
+                android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" P"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="P"
+                android:id="@+id/g_P_box"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" A"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="A"
+                android:id="@+id/g_A_box"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" L"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                android:hint="L"
+                android:id="@+id/g_L_box"
+                android:inputType="number"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <Button android:layout_width="150dp"
+            android:id="@+id/next_page10"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="next"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:background="#13b586"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

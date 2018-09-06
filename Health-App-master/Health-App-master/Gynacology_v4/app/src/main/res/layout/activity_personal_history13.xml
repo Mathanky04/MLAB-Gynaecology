@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginRight="16dp"
+                      android:layout_marginBottom="30dp"
+                      android:orientation="vertical"
+                      android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Personal History"
+                android:id="@+id/g_personal_history"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Diet"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_diet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_diet_veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veg"
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/g_diet_mixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mixed"
+                    android:checked="false"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sleep"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_sleep_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:checked="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_sleep_disturbed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disturbed"
+                    android:checked="false"
+                   />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Appetite"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                      android:hint="apetite"
+                      android:id="@+id/g_appetite_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Micturition"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                      android:hint="micturition"
+                      android:id="@+id/g_micturition_box"
+                      android:inputType="text"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Bowel"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                      android:hint="bowel"
+                      android:id="@+id/g_bowel_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Habits"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box"
+                      android:hint="habits"
+                      android:id="@+id/g_habits_box"
+                />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Allergy History"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_allergy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_allergy_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:checked="false"
+                    android:onClick="click"
+                    />
+
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_allergy_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_allergy_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:checked="false"
+                    android:onClick="click1"/>
+
+            </RadioGroup>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <Button android:layout_width="150dp"
+                android:id="@+id/next_page13"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="next"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:background="#13b586"
+                android:onClick="onProceed"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

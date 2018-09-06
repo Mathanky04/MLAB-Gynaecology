@@ -1,0 +1,23 @@
+DELETE FROM general_information;
+DELETE FROM doctor_table;
+DELETE FROM obstetric_information;
+DELETE FROM first_trimester;
+DELETE FROM second_trimester;
+DELETE FROM third_trimester;
+DELETE FROM investigations;
+DELETE FROM obstetric_score;
+DELETE FROM past_obstetric_history;
+DELETE FROM history_table;
+DELETE FROM personal_history;
+DELETE FROM general_physical_examination;
+DELETE FROM systemic_examination;
+DELETE FROM gynaec_complaints;
+DELETE FROM gynaec_obstetric_history;
+DELETE FROM gynaec_past_history;
+DELETE FROM gynaec_family_history;
+DELETE FROM gynaec_personal_history;
+DELETE FROM gynaec_physical_examination;
+DELETE FROM gynaec_systemic_examination;
+DELETE FROM gynaec_investigations;
+DELETE FROM gynaec_care;
+

@@ -1,0 +1,353 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginRight="16dp"
+                      android:layout_marginBottom="30dp"
+                      android:orientation="vertical"
+                      android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Systemic Examination"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" CVS"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/cvs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/cvs_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click1"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/cvs_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_abnormal"
+                    android:onClick="click"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/cvs_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" RS"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/rs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rs_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click3"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/rs_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_abnormal"
+                    android:onClick="click2"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/rs_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" CNS"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/cns"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/cns_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_normal"
+                    android:onClick="click5"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/cns_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_abnormal"
+                    android:onClick="click4"/>
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/cns_box"
+                          android:scrollbars="vertical"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Obstetric Examination"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Uterine size"
+                style="@style/Identifier"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="   "
+                    android:inputType="number"
+                    android:id="@+id/uterine_size"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Presentation"
+                style="@style/Identifier"/>
+
+            <RadioGroup
+                android:id="@+id/presentation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/cephalic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cephalic"
+                    />
+
+                <RadioButton
+                    android:id="@+id/breech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breech"
+                    />
+
+                <RadioButton
+                    android:id="@+id/transverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transverse"
+                    />
+
+            </RadioGroup>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" FHS"
+                style="@style/Identifier"/>
+
+            <RadioGroup
+                android:id="@+id/fhs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/fhs_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:onClick="click6"
+                    android:checked="false" />
+                <RadioGroup
+                    android:id="@+id/fhs_positive"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/fhs_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/fhs_double"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="++"
+                        />
+                    <RadioButton
+                        android:id="@+id/fhs_triple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+++"
+                        />
+
+                </RadioGroup>
+
+                <RadioButton
+                    android:id="@+id/fhs_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absent"
+                    android:onClick="click7"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Liquor"
+                style="@style/Identifier"/>
+
+            <RadioGroup
+                android:id="@+id/liquor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/adequate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adequate"
+                    />
+
+                <RadioButton
+                    android:id="@+id/reduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reduced"
+                    />
+
+                <RadioButton
+                    android:id="@+id/excess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Excess" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Previous Scar"
+                style="@style/Identifier"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/previous_scar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/previous_scar_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_present"
+                    android:onClick="click8"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/previous_scar_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/previous_scar_absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_absent"
+                    android:onClick="click9"/>
+
+
+            </RadioGroup>
+
+
+
+
+            <Button android:layout_width="150dp"
+                    android:id="@+id/next_page8"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="next"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:background="#13b586"
+                    android:onClick="onProceed"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

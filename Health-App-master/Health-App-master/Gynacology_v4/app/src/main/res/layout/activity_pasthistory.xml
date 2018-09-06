@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginRight="16dp"
+                      android:layout_marginBottom="30dp"
+                      android:orientation="vertical"
+                      android:background="@drawable/greybackground"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Past History"
+                android:id="@+id/g_past_history"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Diabetes"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_diabetes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_diabetes_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:onClick="click"
+
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_diabetes_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_diabetes_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:onClick="click1"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Hypertension"
+                style="@style/Identifier"
+                />
+            <RadioGroup
+                android:id="@+id/g_hypertension"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_hypertension_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:onClick="click2"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_hypertension_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_hypertension_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:onClick="click3"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" T.B"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_TB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_TB_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:onClick="click4"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_TB_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_TB_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:onClick="click5"/>
+
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Epilepsy"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_epilepsy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_epi_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Positive"
+                    android:onClick="click6"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_epilepsy_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_epi_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negative"
+                    android:onClick="click7"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Cardiac Disease"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_cardiac"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_cardiac_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Positive"
+                    android:onClick="click8"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_cardiac_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_cardiac_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negative"
+                    android:onClick="click9"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Renal Disease"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_renal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_renal_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Positive"
+                    android:onClick="click10"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_renal_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_renal_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negative"
+                    android:onClick="click11"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Veneral Disease"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_veneral"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_veneral_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:onClick="click12"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_veneral_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_veneral_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:onClick="click13"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Blood transfusion"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_blood"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_blood_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:onClick="click14"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_blood_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_blood_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:onClick="click15"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Past Surgeries"
+                style="@style/Identifier"
+                />
+
+            <RadioGroup
+                android:id="@+id/g_past_surgery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/g_past_surgery_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:onClick="click16"
+                    />
+                <EditText style="@style/box_big"
+                          android:hint="comments"
+                          android:layout_marginLeft="20dp"
+                          android:id="@+id/g_past_surgery_box"
+                          android:scrollbars="vertical"
+                    />
+
+                <RadioButton
+                    android:id="@+id/g_past_surgery_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:onClick="click17"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Others"
+                style="@style/Identifier"
+                />
+
+            <EditText style="@style/box_big"
+                      android:hint="comments"
+                      android:id="@+id/g_complaints_oi"
+                      android:scrollbars="vertical"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <Button android:layout_width="150dp"
+                android:id="@+id/next_page11"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="next"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:background="#13b586"
+                android:onClick="onProceed"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
